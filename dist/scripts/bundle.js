@@ -50361,7 +50361,7 @@ var AuthorStore = assign({}, EventEmitter.prototype, {
         this.on('change', callback);
     },
     removeChangeListener: function(callback){
-        this.removeChangeListener('change', callback);
+        this.removeListener('change', callback);
     },
     emitChange: function(){
         this.emit('change');
